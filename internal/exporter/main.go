@@ -8,43 +8,43 @@ import (
 
 var (
 	wifiStrength = promauto.NewGauge(prometheus.GaugeOpts{
-		Name: "wifi_strength",
+		Name: "p1_wifi_strength",
 		Help: "Wifi strength in Db",
 	})
 	totalPowerImportT1Kwh = promauto.NewGauge(prometheus.GaugeOpts{
-		Name: "total_power_import_t1_kwh",
+		Name: "p1_total_power_import_t1_kwh",
 		Help: "The total power import on T1 in kWh",
 	})
 	totalPowerImportT2Kwh = promauto.NewGauge(prometheus.GaugeOpts{
-		Name: "total_power_import_t2_kwh",
+		Name: "p1_total_power_import_t2_kwh",
 		Help: "The total power import on T2 in kWh",
 	})
 	totalPowerExportT1Kwh = promauto.NewGauge(prometheus.GaugeOpts{
-		Name: "total_power_export_t1_kwh",
+		Name: "p1_total_power_export_t1_kwh",
 		Help: "The total power export on T1 in kWh",
 	})
 	totalPowerExportT2Kwh = promauto.NewGauge(prometheus.GaugeOpts{
-		Name: "total_power_export_t2_kwh",
+		Name: "p1_total_power_export_t2_kwh",
 		Help: "The total power export on T2 in kWh",
 	})
 	activePowerW = promauto.NewGauge(prometheus.GaugeOpts{
-		Name: "active_power_w",
+		Name: "p1_active_power_w",
 		Help: "The active power in W",
 	})
 	activePowerL1W = promauto.NewGauge(prometheus.GaugeOpts{
-		Name: "active_power_l1_w",
+		Name: "p1_active_power_l1_w",
 		Help: "he active power on L1 in W",
 	})
 	activePowerL2W = promauto.NewGauge(prometheus.GaugeOpts{
-		Name: "active_power_l2_w",
+		Name: "p1_active_power_l2_w",
 		Help: "he active power on L2 in W",
 	})
 	activePowerL3W = promauto.NewGauge(prometheus.GaugeOpts{
-		Name: "active_power_l3_w",
+		Name: "p1_active_power_l3_w",
 		Help: "The active power on L3 in W",
 	})
 	totalGasM3 = promauto.NewGauge(prometheus.GaugeOpts{
-		Name: "total_gas_m3",
+		Name: "p1_total_gas_m3",
 		Help: "The total gas consumption in m3",
 	})
 )
